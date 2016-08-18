@@ -1,0 +1,408 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 7, 2016, Aug 7, 2016 11:03:18 AM
+    Author     : design
+*/
+/*product */
+.invi{
+    height:120px;
+}
+.main-pr{
+    width: 100%;
+    
+    margin: 00px 0 0 0 !important;
+    min-height: 700px;
+    overflow: hidden;
+   /* box-shadow: 2px 2px 15px #8B1A1A;*/
+}
+ .img{
+    width:99%;
+    max-height: 266px;
+    min-height: 266px;
+   
+    overflow: hidden; 
+    margin:1% auto 7% auto !important; 
+    border-radius: 1px;
+    position: relative;
+    padding: 5px ;
+    border: 0px solid #d9534f;
+    border-radius:2px;
+    box-shadow: 1px 1px 10px #d9534f;
+    
+}
+.img img {
+    max-height:250px;
+    min-height:250px;
+    width: 100%;
+    
+    
+}
+.pr1{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.pr1:hover .img{
+    min-height:266px;
+/*    -webkit-animation-name: xoay;
+     -webkit-animation-duration:1s;
+     -webkit-animation-timing-function: ease-out; 
+     -moz-animation-name: xoay;
+     -moz-animation-duration:2s;
+     -moz-animation-timing-function: ease-out; */
+     padding: 10px;
+     
+    
+}
+.icon-cart,.fa-shopping-cart{
+    font-size: 1.5em !important;
+}
+.namepd {min-height: 50px;margin: 3% 0 0 0;}
+.namepd a{
+    text-decoration: none !important;
+    color:#efc34a; 
+}
+.namepd a:hover{
+    text-decoration: none !important;
+    color:#cd9a12; 
+    
+}
+.cost{float: none;color:#cd9a12;margin: 0% 0 0% 0;position: relative; bottom: 1%;clear:both;height:20px;}
+.cart{position: relative;
+      width:100%;
+     bottom: 0%;
+     right: 4%;
+/*     background: #f4d06e;*/
+     height: 30px;
+     overflow: hidden;
+     text-align: center;
+    
+     font-weight: 600;
+       
+}
+.cart a{;padding:7% 0;width: 100%;display: inline-block;
+     
+}
+.cart a:hover{;background:  #faffbd;
+             
+     
+}
+.cart a:target{background:  #ff4a00;
+             
+          
+}
+.cate{
+           width:100%;
+           font-size: 1.3em !important;
+           margin-top: 0;
+           border-radius: 0;
+           text-transform: uppercase;
+       } 
+@-webkit-keyframes xoay {
+    from {
+        transform: rotateX(0deg);
+        transform: skewX(-10deg);
+        transform: skewZ(0deg);
+        
+        
+    }
+    
+    50%{transform:skewX(10deg);
+        
+       transform: rotateX(20deg);
+       transform: skewZ(-200deg);
+    }
+    
+    to {
+        transform: rotateX(0deg);
+       transform:skewX(0deg);
+        transform: skewZ(00deg);
+    }
+    
+}
+@-moz-keyframes xoay {
+    from {
+        transform: rotateX(0deg);
+        transform: skewX(-10deg);
+        transform: skewZ(0deg);
+        
+        
+    }
+    
+    50%{transform:skewX(10deg);
+        
+       transform: rotateX(20deg);
+       transform: skewZ(-200deg);
+    }
+    
+    to {
+        transform: rotateX(0deg);
+       transform:skewX(0deg);
+        transform: skewZ(00deg);
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .listsp{
+        min-width: 240px;
+    }
+    .col2 h2{
+        width:55% !important;
+    }
+}
+@media screen and (max-width:959px){
+    .listsp{
+        
+    }
+    .col2 h2{
+        width:70% !important;
+    }
+}
+
+/*checkbox*/
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+/* SCSS STYLES */
+/*
+.funkyradio {
+
+    div {
+        clear: both;
+        overflow: hidden;
+    }
+
+    label {
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #D1D3D4;
+        font-weight: normal;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+
+        &:empty {
+            display: none;
+
+            ~ label {
+                position: relative;
+                line-height: 2.5em;
+                text-indent: 3.25em;
+                margin-top: 2em;
+                cursor: pointer;
+                user-select: none;
+
+                &:before {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    content: '';
+                    width: 2.5em;
+                    background: #D1D3D4;
+                    border-radius: 3px 0 0 3px;
+                }
+            }
+        }
+
+        &:hover:not(:checked) ~ label {
+            color: #888;
+
+            &:before {
+                content: '\2714';
+                text-indent: .9em;
+                color: #C2C2C2;
+            }
+        }
+
+        &:checked ~ label {
+            color: #777;
+
+            &:before {
+                content: '\2714';
+                text-indent: .9em;
+                color: #333;
+                background-color: #ccc;
+            }
+        }
+
+        &:focus ~ label:before {
+            box-shadow: 0 0 0 3px #999;
+        }
+    }
+
+    &-default {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: #333;
+                background-color: #ccc;
+            }
+        }
+    }
+
+    &-primary {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: #fff;
+                background-color: #337ab7;
+            }
+        }
+    }
+
+    &-success {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: #fff;
+                background-color: #5cb85c;
+            }
+        }
+    }
+
+    &-danger {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: #fff;
+                background-color: #d9534f;
+            }
+        }
+    }
+
+    &-warning {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: #fff;
+                background-color: #f0ad4e;
+            }
+        }
+    }
+
+    &-info {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: #fff;
+                background-color: #5bc0de;
+            }
+        }
+    }
+}
+*/

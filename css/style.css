@@ -1,0 +1,345 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 1, 2016, Aug 1, 2016 5:38:12 PM
+    Author     : design
+*/
+body{
+    background: #F5DEB3;
+   
+}
+#main-container{
+   width: 85%;
+    margin: 0 auto 0px auto;
+    position: inherit;
+    min-height:400px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+#logo {
+    text-align: center;
+    border:1px yellow solid;
+     
+}
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+   
+
+
+ol, ul {
+  list-style: none; }
+ 
+
+blockquote {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a img {
+  border: none; }
+
+/* =Scss Variables
+-------------------------------------------------------------- */
+/* =Global
+-------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+
+/* Headings */
+
+
+a {
+  text-decoration: none;
+  color: #3cb5f9; }
+
+a:hover {
+  color: #0793e2; }
+
+/* =Template
+-------------------------------------------------------------- */
+
+
+/* =Header
+-------------------------------------------------------------- */
+header {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #d43f3a;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+  z-index: 10000;
+}
+  header h1#logo {
+      margin: 1%  auto !important;
+    display: inline-block;
+    height: 80px;
+    line-height: 65px;
+    width:100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 3em;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .navbar {
+    display: inline-block;
+    margin: 0;
+     }
+    .navbar a {
+      line-height: 100px;
+      margin-left: 20px;
+      color: #FFF0F5;
+      font-weight: 700;
+      font-size: 14px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .navbar a:hover {
+        padding-top: 0px !important;
+      color:#F0F8FF;}
+  header.smaller {
+    height: 50px !important; }
+    header.smaller h1#logo {
+      width: 100px;
+      height: 75px;
+      line-height: 55px;
+      font-size: 30px;
+      margin: 0% 0 0 0  !important;
+    }
+    header.smaller .navbar {
+      
+      margin: 0 0 0 0%;
+    }
+    header.smaller .navbar a {
+      line-height:45px; 
+      
+    }
+    .navbar form input[type=search]{
+    
+        width: 87%;
+        height: 0px;
+        margin: 0 1% 0 2%;
+        border-radius: 2px;
+        float: left;
+    } 
+    .navbar form input[type=submit]{
+        width:10%;
+        height: 30px;
+    }
+    
+    header.smaller .navbar form input[type=search]{
+    
+        width: 80%;
+        height: 30px;
+        margin: 0 1% 0 2%;
+        border-radius: 2px;
+        float: left;
+    } 
+    header.smaller .navbar form input[type=submit]{
+        width: 10%;
+        height: 30px;
+        font-size: 1em;
+    }
+/* =Footer
+-------------------------------------------------------------- */
+/* =Extras
+-------------------------------------------------------------- */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 660px) {
+  /* =Header
+  -------------------------------------------------------------- */
+  header h1#logo {
+    display: block;
+    float: none;
+    margin: 0 auto 20px auto;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    
+  }
+  .navbar {
+    display: block;
+    float: none;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto; }
+    .navbar a {
+      line-height: 50px;
+      margin: 0 10px; }
+  header.smaller {
+    height: 75px; }
+    header.smaller h1#logo {
+      height: 40px;
+      line-height: 40px;
+      font-size: 30px;
+      margin: 0 auto;
+    }
+    header.smaller  nav {
+      height: 35px;
+      margin: 0 0 0 -800px !important;
+    }
+      header.smaller .navbar a {
+        line-height: 35px; }
+      header.smaller form input{
+          position: absolute;
+          bottom: 0;
+          width:50%;
+      }
+}
+@media all and (max-width: 600px) {
+  .container {
+    width: 100%; }
+
+  #info-bar a {
+    display: block; }
+  #info-bar span.all-tutorials,
+  #info-bar span.back-to-tutorial {
+    width: 100%; }
+  #info-bar span.all-tutorials,
+  #info-bar span.back-to-tutorial {
+    float: none;
+    text-align: center; }
+  #info-bar span.all-tutorials {
+    border-bottom: solid 1px #0793e2; } }
+
+/**********Footer**********/
+.footer{
+    width:100%;
+    height: 200px;
+    background: #d43f3a;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: 0.8s;
+         -webkit-transition: 0.8s;
+         -moz-transition: 0.8s;
+}
+.main-footer{
+    width: 90%;
+    margin:0 auto;
+    color:#FFF5EE;
+}
+.main-footer a{
+    color:#FFF5EE;
+    
+}
+.main-footer a:hover{
+    color:#F5DEB3;
+    
+    
+}
+.main-footer ul{
+    margin: 0 0 0 15px;
+}
+.image-preview-input {
+    position: relative;
+    overflow: hidden;
+	margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+
+/********Login********/
+.login { 
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1 { color: #d43f3a;  letter-spacing:1px; text-align:center; font-weight: 600; }
+
+.login input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,.8);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+        margin: 0% 0 4%;
+}
+.login input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
